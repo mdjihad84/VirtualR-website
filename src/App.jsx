@@ -5,6 +5,8 @@ import Video from './Pages/HomePage/Video';
 import Feature from './Pages/HomePage/Feature';
 import Accelerate from './Pages/HomePage/Accelerate';
 import Pricing from './Pages/HomePage/Pricing';
+import Community from './Pages/HomePage/Community';
+import Footer from './Pages/HomePage/Footer';
 
 
 const App = () => {
@@ -17,6 +19,8 @@ const App = () => {
       <Feature/>
       <Accelerate/>
       <Pricing/>
+      <Community/>
+      <Footer/>
       </>
     </div>
   );

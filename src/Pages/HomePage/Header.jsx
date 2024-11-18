@@ -37,6 +37,12 @@ const Header = () => {
                             <li><a>Workflow</a></li>
                             <li><a>Pricing</a></li>
                             <li><a>Testimonials</a></li>
+                            {/* Move the 'Create an account' button into the dropdown for small devices */}
+                            <li>
+                                <a className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md text-sm sm:text-base">
+                                    Create an account
+                                </a>
+                            </li>
                         </ul>
                     )}
                 </div>
@@ -53,9 +59,12 @@ const Header = () => {
                     <li><a>Testimonials</a></li>
                 </ul>
             </div>
-            <div className="navbar-end pr-2 space-x-4">
+            <div className="navbar-end pr-2 space-x-4 hidden lg:flex">
                 <a className="py-2 px-3 border rounded-md text-sm sm:text-base">Button</a>
-                <a className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 ml-4 rounded-md text-sm sm:text-base">Create an account</a>
+                {/* 'Create an account' button is now only visible on larger screens */}
+                <a className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 ml-4 rounded-md text-sm sm:text-base hidden lg:block">
+                    Create an account
+                </a>
             </div>
         </div>
     );
