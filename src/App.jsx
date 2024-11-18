@@ -4,6 +4,7 @@ import Hero from './Pages/HomePage/Hero';
 import Video from './Pages/HomePage/Video';
 import Feature from './Pages/HomePage/Feature';
 import Accelerate from './Pages/HomePage/Accelerate';
+import Pricing from './Pages/HomePage/Pricing';
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <Video/>
       <Feature/>
       <Accelerate/>
+      <Pricing/>
       </>
     </div>
   );
