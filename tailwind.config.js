@@ -1,13 +1,12 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+const daisyui = require("daisyui");
+
+module.exports = {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      scrollBehavior: "smooth",
+    },
   },
-  plugins: [
-    require('daisyui'),
-  ],
-}
+  plugins: [daisyui],
+};

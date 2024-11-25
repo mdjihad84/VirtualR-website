@@ -1,28 +1,29 @@
-import React from 'react';
-import Header from './Pages/HomePage/Header';
-import Hero from './Pages/HomePage/Hero';
-import Video from './Pages/HomePage/Video';
-import Feature from './Pages/HomePage/Feature';
-import Accelerate from './Pages/HomePage/Accelerate';
-import Pricing from './Pages/HomePage/Pricing';
-import Community from './Pages/HomePage/Community';
-import Footer from './Pages/HomePage/Footer';
-
+import React from "react";
+import Header from "./Component/Header";
+import Hero from "./Component/Hero";
+import Video from "./Component/Video";
+import Feature from "./Component/Feature";
+import Workflow from "./Component/Workflow";
+import Pricing from "./Component/Pricing";
+import Community from "./Component/Community";
+import Footer from "./Component/Footer";
 
 const App = () => {
   return (
-    <div>
-      <>
-      <Header/>
-      <Hero/>
-      <Video/>
-      <Feature/>
-      <Accelerate/>
-      <Pricing/>
-      <Community/>
-      <Footer/>
-      </>
-    </div>
+    <>
+      <div>
+        <Header />
+      </div>
+      <div className="p-2">
+        <Hero />
+        <Video />
+        <Feature />
+        <Workflow />
+        <Pricing />
+        <Community />
+        <Footer />
+      </div>
+    </>
   );
 };
 
